@@ -16,21 +16,20 @@ A complete, portfolio-ready Verilog project that implements both **synchronous**
 ---
 
 ## Repository Layout
-fifo-processor-implementation/
-├── README.md ← This file
-├── docs/ ← Design notes & waveforms
-│ └── fifo_whitepaper.pdf
-├── src/
-│ ├── sync_fifo.v ← Synchronous FIFO RTL
-│ ├── async_fifo.v ← Asynchronous FIFO RTL
-│ └── common/ ← Shared parameters & helpers
-├── testbench/
-│ ├── sync_fifo_tb.v ← Self-checking TB for sync FIFO
-│ └── async_fifo_tb.v ← Self-checking TB for async FIFO
-├── simulation/
-│ └── waveforms/ ← .vcd or .wlf simulation dumps
-└── synthesis/ ← Constraint & synthesis report stubs
-
+FIFO
+- 
+    - Docs
+        - FIFO_Docs PDF
+    - Simulation & Waveforms
+        - sync.png
+        - async.png
+    - SRC
+        - sync_fifo.v
+        -async_fifo.v
+    - Testbenches
+        - async_fifo_tb.v
+        - sync_fifo_tb.v
+    - README.m
 
 
 ---
@@ -72,7 +71,3 @@ cd fifo-processor-implementation
 
 - Use the necessary software required to check the simulations thorugh this codebase.
 - Use the testbenches and the coebase in src folder
-
-
-
-
