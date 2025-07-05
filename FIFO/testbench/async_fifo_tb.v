@@ -45,6 +45,12 @@ module async_fifo_tb;
     initial rd_clk = 0;
     always #7 rd_clk = ~rd_clk;
 
+    // VCD dump for waveform viewing
+    initial begin
+        $dumpfile("dump.vcd");         // Name of the VCD file to generate
+        $dumpvars(0, async_fifo_tb);   // Dump all signals in this testbench
+    end
+
     // Test sequence
     initial begin
         $display("Starting Asynchronous FIFO Testbench...");
