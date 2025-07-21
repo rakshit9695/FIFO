@@ -45,7 +45,7 @@ module sync_fifo_tb;
 
      initial begin
         $dumpfile("dump.vcd");         // Name of the VCD file to generate
-        $dumpvars(0, async_fifo_tb);   // Dump all signals in this testbench
+        $dumpvars(0, sync_fifo_tb);   // Dump all signals in this testbench
     end
 
     // Test sequence
